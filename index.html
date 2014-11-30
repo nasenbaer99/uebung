@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<style type="text/css">
+  <meta charset="windows-1252">
+	<style type="text/css">
 body{
  background-color:#228B22 ;  
 }
@@ -99,6 +100,11 @@ position: absolute !important;
 clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 clip: rect(1px, 1px, 1px, 1px);
 } 
+
+.center{
+	margin: auto;
+}
+
 		</style>
 		<title>Der unglaubliche Luca Spindler</title>
 	</head>
@@ -111,10 +117,9 @@ clip: rect(1px, 1px, 1px, 1px);
 	<!--Oberen 3 Links -->
 	
 				<ul>
-				<a href="http://lucaspindler.cloudcontrolled.com"><li class="oben">Home</li></a>
-					
-					<a href="http://lucaspindler.cloudcontrolled.com/impressum.html" ><li class="oben">Impressum</li></a>
-					<a href="https://www.facebook.com/luca.spindler"><li class="oben">Contact</li></a>
+					<li class="oben"><a href="http://lucaspindler.cloudcontrolled.com">Home</a></li>
+					<li class="oben"><a href="http://lucaspindler.cloudcontrolled.com/impressum.html">Impressum</a></li>
+					<li class="oben"><a href="https://www.facebook.com/luca.spindler">Contact</a></li>
 				</ul>
 </div>
 	
@@ -126,13 +131,13 @@ clip: rect(1px, 1px, 1px, 1px);
 	
 	<!--kleines Bildchen -->
 	<div class="left">
-	<img src="Franken Knights6 140803.jpg" alt="Bild von Jonas Beckmann (rechts) und Luca Spindler(links) des American Football Vereins Marburg Mercenaries in Süielausrüstung" width="300" height="198">
+	<img src="Franken%20Knights6%20140803.jpg" alt="Bild von Jonas Beckmann (rechts) und Luca Spindler(links) des American Football Vereins Marburg Mercenaries in Süielausrüstung" width="300" height="198">
 </div>
 	
 	
 	
 	<!--Text -->
-	<div class="right"> <h3></h3><p>Hat jemand schonmal vom American Football gehört? Das ist der Sport wo elf Leute versuchen einen ball über eine Linie zu tragen und elf andere versuchen sie daran zu hindern. Die berümteste und beste Liga der Welt ist die<a href="http://www.nfl.com">NFL</a>. Text <br> text<br>text </p> 
+	<div class="right"><p>Hat jemand schonmal vom American Football gehört? Das ist der Sport wo elf Leute versuchen einen ball über eine Linie zu tragen und elf andere versuchen sie daran zu hindern. Die berümteste und beste Liga der Welt ist die<a href="http://www.nfl.com">NFL</a>. Text <br> text<br>text </p> 
 	</div>
 	
 	
@@ -146,15 +151,14 @@ clip: rect(1px, 1px, 1px, 1px);
 	</div>
 	
 	
-<center>
 <form role="search" action="http://de.wikipedia.org/wiki/Spezial:Suche">
-<table>
+<table class="center">
 <tbody><tr>
 <td>
 <a target="_blank" href="http://de.wikipedia.org/wiki/Hauptseite" style=" color:black">Wikipedia
 </a>
 <input id="wikipedia" maxlength="255" size="25" name="search" type="text" placeholder="Suche in der Wikipedia">
-<label for="wikipedia" class="obscure">Wikipedia-Suche</label> 
+<label for="wikipedia" class="obscure">Wikipedia-Suche</label>
 <input value="de" name="hl" type="hidden">
 </td>
 <td>
@@ -162,24 +166,24 @@ clip: rect(1px, 1px, 1px, 1px);
 <input type="submit" name="fulltext" value="Suche">
 </td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 </form>
-</center>
 
 
 
-<center>
-<from method=GET action="http://www.google.de/search">
-<table bgcolor="#FFFFFF"><tr><td>
-<a herf="http://www.google.de">
-<img src="http://www.google.de/logos/Logo_40wht.gif" border="0"
-alt="Google Zeichen" align="absmiddle"></a>
+
+<form method=GET action="http://www.google.de/search">
+<table class="center" style="background-color:#FFFFFF"><tr><td>
+<a href="http://www.google.de">
+<img src="http://www.google.de/logos/Logo_40wht.gif" 
+alt="Google Zeichen" style="vertical-align:middle;border:0"></a>
 <input type=text name=q size=31 maxlength=255 value="">
 <input type=hidden name=hl value=de>
 <input type=submit name=btnG VALUE="Google Search">
 </td></tr></table>
-</from>
-</center> 
+</form>
+
 	
 	
 	
