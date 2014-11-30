@@ -94,6 +94,11 @@ a{
     background-color: #BDBDBD;
     
 }
+.obscure {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+} 
 		</style>
 		<title>Der unglaubliche Luca Spindler</title>
 	</head>
@@ -110,7 +115,6 @@ a{
 					
 					<a href="http://lucaspindler.cloudcontrolled.com/impressum.html" ><li class="oben">Impressum</li></a>
 					<a href="https://www.facebook.com/luca.spindler"><li class="oben">Contact</li></a>
-					<a href="http://lucaspindler.cloudcontrolled.com/links.html" ><li class="oben">Links zur HÜ</li></a>
 				</ul>
 </div>
 	
@@ -122,7 +126,7 @@ a{
 	
 	<!--kleines Bildchen -->
 	<div class="left">
-	<a href="http://www.mercenaries.de/de/uploads/images/Gallery/spiele/2014-06-15/RVM_1428.jpg"><img src="http://www.mercenaries.de/de/uploads/images/Gallery/spiele/2014-06-15/RVM_1428.jpg" alt="Bild von Jonas Beckmann (rechts) und Luca Spindler(links) des American Football Vereins Marburg Mercenaries in Süielausrüstung" width="300" height="198"></a>
+	<img src="Franken Knights6 140803.jpg" alt="Bild von Jonas Beckmann (rechts) und Luca Spindler(links) des American Football Vereins Marburg Mercenaries in Süielausrüstung" width="300" height="198">
 </div>
 	
 	
@@ -143,21 +147,41 @@ a{
 	
 	
 <center>
-<form action="http://de.wikipedia.org/wiki" method="post" target="_blank" name="frmWiki">
+<form role="search" action="http://de.wikipedia.org/wiki/Spezial:Suche">
 <table>
 <tbody><tr>
 <td>
 <a target="_blank" href="http://de.wikipedia.org/wiki/Hauptseite" style=" color:black">Wikipedia
 </a>
-<input maxlength="255" size="25" name="xsearch">
+<input id="wikipedia" maxlength="255" size="25" name="search" type="text" placeholder="Suche in der Wikipedia">
+<label for="wikipedia" class="obscure">Wikipedia-Suche</label> 
 <input value="de" name="hl" type="hidden">
 </td>
 <td>
-<input onclick="window.document.frmWiki.action = 'http://de.wikipedia.org/wiki/' + document.frmWiki.xsearch.value;" value="Suche" name="btnG" type="submit">
+<input type="submit" name="go" value="Artikel">
+<input type="submit" name="fulltext" value="Suche">
 </td>
 </tr>
 </tbody></table>
 </form>
 </center>
-	</body>
+
+
+
+<center>
+<from method=GET action="http://www.google.de/search">
+<table bgcolor="#FFFFFF"><tr><td>
+<a herf="http://www.google.de">
+<img src="http://www.google.de/logos/Logo_40wht.gif" border="0"
+alt="Google Zeichen" align="absmiddle"></a>
+<input type=text name=q size=31 maxlength=255 value="">
+<input type=hidden name=hl value=de>
+<input type=submit name=btnG VALUE="Google Search">
+</td></tr></table>
+</from>
+</center> 
+	
+	
+	
+</body>
 </html>
