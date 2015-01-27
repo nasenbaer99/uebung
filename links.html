@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 
 <style type="text/css">
+.halloe {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: #ABCDEF;
+}
 body{
 background-color:#228B22 ;
 }
@@ -100,9 +106,21 @@ clip: rect(1px, 1px, 1px, 1px);
 margin: auto;
 }
 </style>
+<script type='text/javascript' >
+$(document).ready(function(){
+            $(".halloe").click(function(){
+    $(".halloe").hide("slow");
+        });
+});
+
+
+</script>
+
 <title>Links für die HA</title>
 </head>
 <body>
+
+
 <div class="navbar">
 <!--Oberen 3 Links -->
 <ul>
@@ -138,7 +156,7 @@ margin: auto;
 <td>
 <a target="_blank" href="http://de.wikipedia.org/wiki/Hauptseite" style=" color:black">Wikipedia
 </a>
-<input id="wikipedia" maxlength="255" size="25" name="search" type="text" placeholder="Suche in der Wikipedia">
+<input id="wikipedia" maxlength="50" size="25" name="search" type="text" placeholder="Suche in der Wikipedia">
 <label for="wikipedia" class="obscure">Wikipedia-Suche</label>
 <input value="de" name="hl" type="hidden">
 </td>
@@ -147,6 +165,8 @@ margin: auto;
 <input type="submit" name="fulltext" value="Suche">
 </td>
 </tr>
+
+<div class="halloe"></div>
 </tbody>
 </table>
 </body>
